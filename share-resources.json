@@ -1,0 +1,13 @@
+{
+    "display_name": "org-t0-gateway",
+	"resource_objects": [
+        {
+            "resource_path": "/infra/sites/default/enforcement-points/default/edge-clusters/46d44a29-38cd-4495-ac83-a144c142fe00",
+            "include_children": false
+        },
+        {
+            "resource_path": "/infra/tier-0s/t0-gateway",
+            "include_children": false
+        }
+    ]
+}

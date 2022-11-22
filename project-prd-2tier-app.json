@@ -1,0 +1,51 @@
+{
+  "resource_type": "Infra",
+  "children": [
+    {
+      "resource_type": "ChildTier1",
+      "marked_for_delete": false,
+      "Tier1": {
+        "resource_type": "Tier1",
+        "id": "dev-t1-gateway",
+        "display_name": "dev-t1-gateway",
+        "tier0_path":"/infra/tier-0s/t0-gateway",
+        "children": [
+          {
+           "resource_type":"ChildLocaleServices",
+           "LocaleServices":{
+               "resource_type":"LocaleServices",
+               "id":  "default",
+                "edge_cluster_path": "/infra/sites/default/enforcement-points/default/edge-clusters/46d44a29-38cd-4495-ac83-a144c142fe00"
+                }
+        },
+          {
+            "resource_type": "ChildSegment",
+            "Segment": {
+              "resource_type": "Segment",
+              "id": "dev-web",
+              "display_name": "dev-web",
+              "subnets": [
+                {
+                  "gateway_address": "172.16.10.1/24"
+                }
+              ]
+            }
+          },
+          {
+            "resource_type": "ChildSegment",
+            "Segment": {
+              "resource_type": "Segment",
+              "id": "dev-db",
+              "display_name": "dev-db",
+              "subnets": [
+                {
+                  "gateway_address": "172.16.20.1/24"
+                }
+              ]
+            }
+          }
+       ]
+      }
+    }
+  ]
+}

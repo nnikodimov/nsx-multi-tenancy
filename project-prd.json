@@ -1,0 +1,13 @@
+{
+    "site_infos": [
+        {
+            "edge_cluster_paths": [
+                "/infra/sites/default/enforcement-points/default/edge-clusters/46d44a29-38cd-4495-ac83-a144c142fe00"
+            ],
+            "site_path": "/infra/sites/default"
+        }
+    ],
+    "tier_0s": [
+        "/infra/tier-0s/t0-gateway"
+    ]
+}

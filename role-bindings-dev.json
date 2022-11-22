@@ -1,0 +1,17 @@
+{
+    "name":"sally@corp.local",
+    "type": "remote_user",
+    "roles_for_paths": [
+        {
+            "path": "/orgs/default/projects/project-dev",
+            "roles": [
+                {
+                    "role": "project_admin"
+                }
+            ]
+        }
+    ],
+    "resource_type": "RoleBinding",
+    "identity_source_type": "LDAP",
+    "read_roles_for_paths": true
+}
