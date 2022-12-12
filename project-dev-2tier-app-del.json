@@ -3,15 +3,12 @@
   "children": [
     {
       "resource_type": "ChildTier1",
-      "marked_for_delete": false,
+      "marked_for_delete": true,
       "Tier1": {
         "resource_type": "Tier1",
-        "id": "prd-t1-gateway",
-        "display_name": "prd-t1-gateway",
+        "id": "dev-t1-gateway",
+        "display_name": "dev-t1-gateway",
         "tier0_path":"/infra/tier-0s/t0-gateway",
-	"route_advertisement_types": [
-          "TIER1_CONNECTED"
-        ],
         "children": [
           {
            "resource_type":"ChildLocaleServices",
@@ -23,26 +20,28 @@
         },
           {
             "resource_type": "ChildSegment",
+            "marked_for_delete": true,
             "Segment": {
               "resource_type": "Segment",
-              "id": "prd-web",
-              "display_name": "prd-web",
+              "id": "dev-web",
+              "display_name": "dev-web",
               "subnets": [
                 {
-                  "gateway_address": "172.17.10.1/24"
+                  "gateway_address": "172.16.10.1/24"
                 }
               ]
             }
           },
           {
             "resource_type": "ChildSegment",
+            "marked_for_delete": true,
             "Segment": {
               "resource_type": "Segment",
-              "id": "prd-db",
-              "display_name": "prd-db",
+              "id": "dev-db",
+              "display_name": "dev-db",
               "subnets": [
                 {
-                  "gateway_address": "172.17.20.1/24"
+                  "gateway_address": "172.16.20.1/24"
                 }
               ]
             }

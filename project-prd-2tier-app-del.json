@@ -3,7 +3,7 @@
   "children": [
     {
       "resource_type": "ChildTier1",
-      "marked_for_delete": false,
+      "marked_for_delete": true,
       "Tier1": {
         "resource_type": "Tier1",
         "id": "prd-t1-gateway",
@@ -15,6 +15,7 @@
         "children": [
           {
            "resource_type":"ChildLocaleServices",
+           "marked_for_delete": true,
            "LocaleServices":{
                "resource_type":"LocaleServices",
                "id":  "default",
@@ -23,6 +24,7 @@
         },
           {
             "resource_type": "ChildSegment",
+            "marked_for_delete": true,
             "Segment": {
               "resource_type": "Segment",
               "id": "prd-web",
@@ -36,6 +38,7 @@
           },
           {
             "resource_type": "ChildSegment",
+            "marked_for_delete": true,
             "Segment": {
               "resource_type": "Segment",
               "id": "prd-db",
